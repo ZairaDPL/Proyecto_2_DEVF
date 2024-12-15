@@ -92,16 +92,15 @@ main .encabezado{
     font-weight: bold;
 }
 
-.principal{
+main .principal{
     display: grid;
-    margin: auto;
+    padding-left: 80px;
     margin-top: 14px;
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 12, 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     grid-gap: 14px;
 }
 
@@ -116,19 +115,14 @@ main .encabezado{
 }
 
 .enlace{
+    display: block;
+    justify-items: center;
+    align-items: center;
     text-decoration: none;
 }
 
 .enlace img{
-    /* display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: 0px 4% 8px;
-    border: none;
-    border-radius: 50%;
-    width: auto;
-    height: auto; */
-    display: flex;
+    display: block;
     justify-items: center;
     align-items: center;
     float: left;
@@ -147,7 +141,7 @@ main .encabezado{
 }
 
 footer{
-    display: flex;
+    display: block;
     float: left;
     margin-top: 42px;
     background-color: #343239;
@@ -204,6 +198,83 @@ footer .imagen{
 
 footer .logo_redes{
     display: block;
+    padding: 0px 10px;
+    width: 20%;
+}
+
+.logo_redes p{
+    display: block;
     float: left;
+    margin-top: 15px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    line-height: 18px;
+    width: 60%;
+}
+
+.logo_redes .logo_footer{
+    display: block;
+    margin: auto;
+    float: left;
+    width: 124px;
+}
+
+.logo_footer img{
+    display: block;
+    float: left;
+    margin-top: 24px;
+    border: none;
+    width: 100%;
+}
+
+.logo_redes .rs{
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: 14px;
+    margin-right: 100%;
+    color: #fff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 22px;
+    padding-left: 38px;
+}
+
+.rs div{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    width: 45px;
+    background-color: #E8D1B8;
+    border-radius: 50%; 
+}
+
+.rs img{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: #e8d1b8; 
+    width: 22px;
+    height: 22px;
+}
+
+.logo_redes .menu_recceta{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.menu_recceta a{
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 16px;
     width: 100%;
 }
