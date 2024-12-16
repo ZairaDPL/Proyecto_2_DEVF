@@ -149,6 +149,14 @@ footer{
     width: 100%;
 }
 
+footer{
+    display: block;
+    float: left;
+    margin-top: 42px;
+    background-color: #343239;
+    width: 100%;
+}
+
 footer .imagen{
     display: block;
     float: left;
@@ -164,7 +172,7 @@ footer .imagen{
 .imagen p{
     display: block;
     margin-top: 65px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 27px;
@@ -197,101 +205,84 @@ footer .imagen{
     width: 100;
 }
 
-footer .submenus{
+footer .submenus {
     display: flex;
-    padding: 42px 24px 34px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.submenus .footer-contenedor{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.footer-contenedor .footer-section{
-    display: block;
-    padding: 0px 10px;
-    width: 20%;
-}
-
-.footer-section .logo_footer{
-    float: left;
-    width: 124px;
-}
-
-.logo_footer img{
-    display: block;
-    float: left;
-    margin-top: 24px;
-    border: none;
-    width: 100%;
-}
-.footer-section p{
-    display: block;
-    float: left;
-    margin-top: 15px;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 18px;
-    width: 60%;
-}
-
-.footer-section .social-icons{
-    display: block;
-}
-
-.social-icons a{
-    display: block;
-    float: left;
-    position: relative;
-    margin-top: 14px;
-    margin-right: 100%;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-    line-height: 22px;
-    padding-left: 38px;
-}
-
-.social-icons a img{
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 50%;
-    background-color: #e8d1b8;
-    width: 22px;
-    height: 22px;
-}
-
-.footer-section h3{
-    display: block;
-    float: left;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 18px;
-    padding-bottom: 8px;
+footer .submenus .footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
 }
 
-.footer-section ul{
+footer .footer-section {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+footer .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin: 8px 0;
+}
+
+footer .footer-section ul li a {
+    color: white;
     text-decoration: none;
 }
 
-.footer-section a{
-    display: block;
-    float: left;
-    color: #fff;
-    font-size: 13px;
-    text-decoration: none;
-    line-height: 16px;
-    width: 100%;
+footer .footer-section ul li a:hover {
+    text-decoration: underline;
 }
 
-.footer-section a .saludable{
-    display: block;
-    width: 100%;
-    height: 40px;
+footer .social-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+footer .social-icons a img {
+    margin-right: 8px;
+}
+
+footer .politicas {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .politicas p {
+    font-size: 14px;
+    margin: 0;
+}
+
+footer .politicas .footer-links {
+    margin-top: 10px;
+}
+
+footer .politicas .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer .politicas .footer-links a:hover {
+    text-decoration: underline;
 }
